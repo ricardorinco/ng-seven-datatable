@@ -25,7 +25,7 @@
 
             // other libraries
             'rxjs': 'npm:rxjs',
-            '@cmglez10/ng-datatable': 'npm:@cmglez10/ng-datatable',
+            '@abdulk1/ng-datatable': 'npm:@abdulk1/ng-datatable',
             'lodash': 'npm:lodash/lodash.js'
         },
         // packages tells the System loader how to load when no filename and/or no extension
@@ -35,6 +35,11 @@
                 defaultExtension: 'js'
             },
             rxjs: {
+                main: 'index.js',
+                defaultExtension: 'js'
+            },
+            'rxjs/operators' : {
+                main: 'index.js',
                 defaultExtension: 'js'
             },
             '@cmglez10/ng-datatable': {
