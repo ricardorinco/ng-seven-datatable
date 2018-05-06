@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.0 (2018-05-05)
+
+
+Changes:
+    
+    - First commit of forked project (angular-6-datatable)
+    - Updated to Angular 6
+
 ## 0.7.0 (2018-03-15)
 
 

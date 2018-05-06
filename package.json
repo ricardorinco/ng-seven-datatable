@@ -1,5 +1,5 @@
 {
-  "name": "@abdulk1/ng-datatable",
+  "name": "angular-6-datatable",
   "version": "0.8.0",
   "description": "DataTable component for Angular framework",
   "main": "index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abdulk1/ng-datatable.git"
+    "url": "git+https://github.com/abdulk1/angular-6-datatable.git"
   },
   "keywords": [
     "angular",

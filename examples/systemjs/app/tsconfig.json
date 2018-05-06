@@ -18,8 +18,8 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@abdulk1/ng-datatable": ["../../.."],
-      "@abdulk1/ng-datatable/*": ["../../../*"]
+      "angular-6-datatable": ["../../.."],
+      "angular-6-datatable/*": ["../../../*"]
     }
   }
 }

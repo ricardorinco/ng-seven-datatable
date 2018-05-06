@@ -1,14 +1,12 @@
 # Table component with sorting and pagination for Angular
-It is a forked version of [angular2-datatable](https://github.com/mariuszfoltak/angular2-datatable) updated to Angular 5.
-
-[![npm version](https://badge.fury.io/js/%40cmglez10%2Fng-datatable.svg)](https://badge.fury.io/js/%40cmglez10%2Fng-datatable)
+It is a forked version of [@cmglez10/ng-datatable](https://github.com/@cmglez10/ng-datatable) updated to Angular 6.
 
 ## 
 
 ## Installation
 
 ```
-npm i @cmglez10/ng-datatable --save
+npm i angular-6-datatable --save
 ```
 
 ## Usage example
@@ -17,7 +15,7 @@ AppModule.ts
 ```typescript
 import {NgModule} from "@angular/core";
 ...
-import {DataTableModule} from "@cmglez10/ng-datatable";
+import {DataTableModule} from "angular-6-datatable";
 
 @NgModule({
     imports: [

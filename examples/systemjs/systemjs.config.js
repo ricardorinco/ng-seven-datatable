@@ -25,7 +25,7 @@
 
             // other libraries
             'rxjs': 'npm:rxjs',
-            '@abdulk1/ng-datatable': 'npm:@abdulk1/ng-datatable',
+            'angular6-datatable': 'npm:angular6-datatable',
             'lodash': 'npm:lodash/lodash.js'
         },
         // packages tells the System loader how to load when no filename and/or no extension
