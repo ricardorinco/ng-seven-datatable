@@ -1,28 +1,24 @@
-import {NgModule} from "@angular/core";
-import {CommonModule} from "@angular/common";
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import {DataTable} from "./DataTable";
-import {DefaultSorter} from "./DefaultSorter";
-import {Paginator} from "./Paginator";
-import {BootstrapPaginator} from "./BootstrapPaginator";
+import { DataTable } from './DataTable';
+import { DefaultSorter } from './DefaultSorter';
+import { Paginator } from './Paginator';
+import { BootstrapPaginator } from './BootstrapPaginator';
 
 @NgModule({
-    imports: [
-        CommonModule
-    ],
     declarations: [
+        BootstrapPaginator,
         DataTable,
         DefaultSorter,
-        Paginator,
-        BootstrapPaginator
+        Paginator
     ],
     exports: [
+        BootstrapPaginator,
         DataTable,
         DefaultSorter,
-        Paginator,
-        BootstrapPaginator
-    ]
+        Paginator
+    ],
+    imports: [CommonModule]
 })
-export class DataTableModule {
-
-}
+export class DataTableModule { }

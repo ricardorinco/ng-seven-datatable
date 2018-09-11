@@ -1,42 +1,42 @@
-import {Component, Input, SimpleChange, OnChanges, Optional} from "@angular/core";
-import {DataTable, PageEvent} from "./DataTable";
+import { Component, Input, SimpleChange, OnChanges, Optional } from '@angular/core';
+import { DataTable, PageEvent } from './DataTable';
 
 @Component({
-    selector: "mfPaginator",
+    selector: "sv-paginator",
     template: `<ng-content></ng-content>`
 })
 export class Paginator implements OnChanges {
 
-    @Input("mfTable") inputMfTable: DataTable;
+    @Input("svTable") inputSVTable: DataTable;
 
-    private mfTable: DataTable;
+    private svTable: DataTable;
 
     public activePage: number;
     public rowsOnPage: number;
     public dataLength: number = 0;
     public lastPage: number;
 
-    public constructor(@Optional() private injectMfTable: DataTable) {
-    }
+    public constructor(@Optional() private injectSVTable: DataTable) { }
 
-    public ngOnChanges(changes: {[key: string]: SimpleChange}): any {
-        this.mfTable = this.inputMfTable || this.injectMfTable;
-        this.onPageChangeSubscriber(this.mfTable.getPage());
-        this.mfTable.onPageChange.subscribe(this.onPageChangeSubscriber);
+    public ngOnChanges(changes: { [key: string]: SimpleChange }): any {
+        this.svTable = this.inputSVTable || this.injectSVTable;
+        this.onPageChangeSubscriber(this.svTable.getPage());
+        this.svTable.onPageChange.subscribe(this.onPageChangeSubscriber);
     }
 
     public setPage(pageNumber: number): void {
-        this.mfTable.setPage(pageNumber, this.rowsOnPage);
+        this.svTable.setPage(pageNumber, this.rowsOnPage);
     }
 
     public setRowsOnPage(rowsOnPage: number): void {
-        this.mfTable.setPage(this.activePage, rowsOnPage);
+        this.svTable.setPage(this.activePage, rowsOnPage);
     }
 
-    private onPageChangeSubscriber = (event: PageEvent)=> {
+    private onPageChangeSubscriber = (event: PageEvent) => {
         this.activePage = event.activePage;
         this.rowsOnPage = event.rowsOnPage;
         this.dataLength = event.dataLength;
         this.lastPage = Math.ceil(this.dataLength / this.rowsOnPage);
     };
+
 }
